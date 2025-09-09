@@ -1,6 +1,6 @@
 function getTotalBalanceByGender(users, gender) {
-  // return users.filter(user => user.gender === gender).map(user => user.balance).reduce((acc, num) => acc + num, 0)
-  return users.filter(user => user.gender === gender).reduce((acc, user) => acc + user.balance, 0); //both work, latter one use less chaining
+  return users.filter(user => user.gender === gender).map(user => user.balance).reduce((acc, num) => acc + num, 0)
+  // return users.filter(user => user.gender === gender).reduce((acc, user) => acc + user.balance, 0); //both work, latter one use less chaining
 }
 
 const clients = [
